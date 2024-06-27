@@ -18,16 +18,14 @@ using namespace std;
 int repeats(std::vector<int> v)
 {
     map<int, int> mp;
-    for (int i = 0; i < v.size(); i++)
-    {
+    for (int i = 0; i < v.size(); i++){
         mp[v[i]]++;
     }
 
     int sum = 0;
     for (pair p : mp)
     {
-        if (p.second == 1)
-        {
+        if (p.second == 1){
             sum = sum + p.first;
         }
     }
